@@ -95,7 +95,16 @@ function inches() {
   let inches = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 5 CODE HERE
+  let mileResults = Math.floor(inches/63360);
+  inches = inches%63360;
+  let yardResults = Math.floor(inches/36);
+  inches = inches%36;
+  let feetResults = Math.floor(inches/12);
+  inches = inches%12;
+  let inchesResults = Math.floor(inches/1);
+  inches = inches%1;
+  var p=document.getElementById("output5");
+  p.innerHTML=`Miles: ${mileResults}</br>Yards: ${yardResults}</br>Feet: ${feetResults}</br>Inches: ${inchesResults}`;
 
   ////////////////////////// DO NOT MODIFY
   check("inches", input); // DO NOT MODIFY
@@ -119,7 +128,14 @@ function centimeters() {
   let centimeters = input; // DO NOT MODIFY
   /////////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 6 CODE HERE
+  let kilometersResults = Math.floor(centimeters/100000);
+  centimeters = centimeters%100000;
+  let metersResults = Math.floor(centimeters/100);
+  centimeters = centimeters%100;
+  let centimetersResults = Math.floor(centimeters/1);
+  centimeters = centimeters%1;
+  var p=document.getElementById("output6");
+  p.innerHTML=`Kilometers: ${kilometersResults}</br>Meters: ${metersResults}</br>Centimeters: ${centimetersResults}`;
 
   /////////////////////////////// DO NOT MODIFY
   check("centimeters", input); // DO NOT MODIFY
@@ -143,7 +159,18 @@ function fluidOunces() {
   let fluidOunces = input; // DO NOT MODIFY
   /////////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 7 CODE HERE
+  let gallonResults = Math.floor(fluidOunces/128);
+  fluidOunces = fluidOunces%128;
+  let quartResults = Math.floor(fluidOunces/32);
+  fluidOunces = fluidOunces%32;
+  let pintResults = Math.floor(fluidOunces/16);
+  fluidOunces = fluidOunces%16
+  let cupResults = Math.floor(fluidOunces/8);
+  fluidOunces = fluidOunces%8;
+  let fluidOuncesResults = Math.floor(fluidOunces/1);
+  fluidOunces = fluidOunces%1;
+  var p=document.getElementById("output7");
+  p.innerHTML=`Gallons: ${gallonResults}</br>Quarts: ${quartResults}</br>Pints: ${pintResults}</br>Cups: ${cupResults}</br>Fluid Ounces: ${fluidOuncesResults}`;
 
   /////////////////////////////// DO NOT MODIFY
   check("fluidOunces", input); // DO NOT MODIFY
@@ -167,7 +194,14 @@ function ounces() {
   let ounces = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 8 CODE HERE
+  let tonResults = Math.floor(ounces/128);
+  ounces = ounces%128;
+  let poundResults = Math.floor(ounces/16);
+  ounces = ounces%16;
+  let ouncesResults = Math.floor(ounces/1);
+  ounces = ounces%1;
+  var p=document.getElementById("output8");
+  p.innerHTML=`Tons: ${tonResults}</br>Pounds: ${poundResults}</br>Ounces: ${ouncesResults}`;
 
   ////////////////////////// DO NOT MODIFY
   check("ounces", input); // DO NOT MODIFY
