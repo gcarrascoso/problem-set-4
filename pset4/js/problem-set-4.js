@@ -260,7 +260,13 @@ function change() {
   let amount = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 10 CODE HERE
+  amount*=100
+  let quarters=Math.floor((amount)/25);
+  let dimes=Math.floor((amount - (quarters*25))/10);
+  let nickels=Math.floor((amount - (quarters*25) - (dimes*10))/5);
+  let pennies=Math.floor((amount - (quarters*25) - (dimes*10) - (nickels*5))/1);
+  let div10=document.getElementById("output10");
+  div10.innerHTML=(quarters + dimes + nickels + pennies + " coins.");
 
   ////////////////////////// DO NOT MODIFY
   check("change", input); // DO NOT MODIFY
